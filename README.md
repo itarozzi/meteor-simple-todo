@@ -30,6 +30,24 @@ meteor mongo
 
 Or you can use GUI tools, e.g. Robomongo.
 
+
+
+Running on Android Device
+-------------------------
+```
+meteor run android
+```
+run the app in the Android device emulator
+
+
+```
+meteor run android-device
+```
+run the app in a real Android device connected via ADB
+
+
+
+
 IDE and Tools
 -------------
 
