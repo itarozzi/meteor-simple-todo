@@ -17,7 +17,7 @@ import './body.html';
 Template.body.helpers({
   tasks() {
     // Show newest tasks at the top
-    return Tasks.find({}, { sort: { createdAt: -1 } });
+    return Tasks.find({}, { sort: { text: 1 } });
   },
 });
 
