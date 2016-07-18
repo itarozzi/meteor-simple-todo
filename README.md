@@ -20,6 +20,16 @@ meteor npm install
 meteor
 ```
 
+When compiled and started, the app will be available at: http://localhost:3000/
+
+The Mongo DB, if used, is available at localhost:3001 
+You can use console shell to manipulate the DB 
+```
+meteor mongo
+```
+
+Or you can use GUI tools, e.g. Robomongo.
+
 IDE and Tools
 -------------
 
