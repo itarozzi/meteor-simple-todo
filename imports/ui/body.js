@@ -32,6 +32,9 @@ Template.body.helpers({
     // Show newest tasks at the top
     return Tasks.find({}, { sort: { text: 1 } });
   },
+  incompleteCount() {
+    return Tasks.find({ checked: { $ne: true } }).count();  
+  },
 });
 
 
