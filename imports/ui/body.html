@@ -10,10 +10,12 @@
         
              {{> loginButtons}}
     
-        
+            <!-- Show the form only if a user is logged.  currentUser is an helper for logged users -->
+            {{#if currentUser}}
             <form class="new-task">
                 <input type="text" name="text" placeholder="Type to add new tasks" />
             </form>
+            {{/if}}
         </header>
 
 
