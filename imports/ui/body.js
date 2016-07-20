@@ -19,6 +19,9 @@ import './body.html';
 // Setup a new ReactiveDict and attach it to the body template instance when it is first created:
 Template.body.onCreated(function bodyOnCreated() {
     this.state = new ReactiveDict();
+    
+    // Subscribe to the publication defined in api/tasks.js
+    Meteor.subscribe('tasks');
 });
 
 // Load data from Mongo DB

@@ -4,6 +4,14 @@ import { check } from 'meteor/check';
 
 export const Tasks = new Mongo.Collection('tasks');
 
+// Execute the publish only in the server
+if (Meteor.isServer) {
+     // This code only runs on the server
+    Meteor.publish('tasks', function tasksPublication() {
+        return Tasks.find();
+    }); 
+}
+
 
 // define some methods to interact with the DB. 
 //We need one method for each database operation we want to perform on the client.
